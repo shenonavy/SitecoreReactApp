@@ -13,8 +13,11 @@ export default function Ssr({ albums }: { albums: any[] }) {
   return (
     <div className="p-4">
       <div className="grid grid-cols-3 gap-4">
-        {albums?.map((album: any) => (
-          <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        {albums?.map((album, index) => (
+          <div
+            className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+            key={index}
+          >
             <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               {album.title}
             </h5>
