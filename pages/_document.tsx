@@ -42,10 +42,10 @@ export default function Document() {
                 About
               </Link>
               <Link
-                href="#responsive-header"
+                href="/ssr"
                 className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
               >
-                Examples
+                SSR
               </Link>
               <Link
                 href="#responsive-header"
